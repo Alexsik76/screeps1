@@ -39,7 +39,7 @@ if(miners.length < Memory.containers.length && Memory.energyAv > 549) {
 
     var harvesters = _.filter(Game.creeps, (creep) => creep.memory.role == 'harvester');
     console.log('Harvesters: ' + harvesters.length);
-    var needHarvesters = Memory.container.store[RESOURCE_ENERGY] == 2000 ? 3 : 2;
+    var needHarvesters = Memory.container.store[RESOURCE_ENERGY] > 1500 ? 4 : 2;
     console.log('needHarvesters  ' + needHarvesters);
     if(harvesters.length < needHarvesters) {
       readyToInvasion += 1;
@@ -62,7 +62,7 @@ console.log('Not energy for spawn harvester');
 }
     var harvesters2 = _.filter(Game.creeps, (creep) => creep.memory.role == 'harvester2');
     console.log('Harvesters2: ' + harvesters2.length);
-        if(harvesters2.length < 3 && Memory.readyToInvasion1) {
+        if(harvesters2.length < 2 && Memory.readyToInvasion1) {
           readyToInvasion += 1;
         var newName = 'HarvesterWar' + Game.time;
         console.log('Spawning new harvesterWar: ' + newName);
@@ -92,7 +92,7 @@ console.log('Not energy for spawn harvester');
 
     var doctors = _.filter(Game.creeps, (creep) => creep.memory.role == 'doctor');
     console.log('Doctors: ' + doctors.length);
-    if(doctors.length < 2 && Memory.energyAv > 299) {
+    if(doctors.length < 1 && Memory.energyAv > 299) {
       readyToInvasion += 1;
         var newName = 'Doctor' + Game.time;
         console.log('Spawning new Doctor: ' + newName);
