@@ -256,6 +256,6 @@ defendRoom(Memory.roomName);
 //    Memory.SCRIPT_VERSION = SCRIPT_VERSION
 //    console.log('New code uplodated')
 //}
-console.log('WOOOOOOOORK');
+
 
     }
