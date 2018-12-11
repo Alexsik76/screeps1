@@ -1,4 +1,4 @@
-require('version');
+//require('version');
 var number = 0;
 var roleHarvester = require('role.harvester');
 var roleUpgrader = require('role.upgrader');
@@ -252,10 +252,10 @@ defendRoom(Memory.roomName);
 
 
 
-if(!Memory.SCRIPT_VERSION || Memory.SCRIPT_VERSION != SCRIPT_VERSION) {
-    Memory.SCRIPT_VERSION = SCRIPT_VERSION
-    console.log('New code uplodated')
-}
-
+//if(!Memory.SCRIPT_VERSION || Memory.SCRIPT_VERSION != SCRIPT_VERSION) {
+//    Memory.SCRIPT_VERSION = SCRIPT_VERSION
+//    console.log('New code uplodated')
+//}
+console.log('WOOOOOOOORK');
 
     }
