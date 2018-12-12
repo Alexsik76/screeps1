@@ -258,4 +258,4 @@ defendRoom(Memory.roomName);
 //}
 
 
-    }
+};
